@@ -25,8 +25,8 @@ def main() -> None:
     print("Please answer the following questions with 'yes' or 'no'\n")
 
     # Questions
-    if ask_yes("Is your character youtuber"):
-        if ask_yes("Does your character has more than 100 subscriber"):
+    if ask_yes("Is your character a youtuber?"):
+        if ask_yes("Does your character has more than 100 subscribers?"):
             if ask_yes("Is your character part of CyHub?"):
                 if ask_yes("Does your character play chess?"):
                     ask_character("Syntax")
@@ -68,6 +68,6 @@ def main() -> None:
     elif ask_yes("Is your character Turkish?"):
          ask_character("AncasTier")
     else:
-    ask_character("Bareth")
+        ask_character("Bareth")
 if __name__ == "__main__":
     main()
