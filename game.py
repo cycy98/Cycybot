@@ -56,18 +56,18 @@ def main() -> None:
     elif ask_yes("Is your character part of CyHub?):
         if ask_yes("Is your character Turkish?"):
             ask_character("AncasTier")
-    elif ask_yes("Is your character part of Tiger's Park (Jonathan's server)?"):
-        if ask_yes("Is your character mod in that server?"):
-            ask_character("GameNerd")
+        elif ask_yes("Is your character part of Tiger's Park (Jonathan's server)?"):
+            if ask_yes("Is your character mod in that server?"):
+                ask_character("GameNerd")
+            else:
+                ask_character("NonAccounter")
+        elif ask_yes("Is your character part of MoonGuyyy's server?"):
+            if ask_yes("Does your character code?"):
+                ask_character("Restitutor")
+            else:
+                ask_character("Robadog")
+        if ask_yes("Does your character speak French?"): ask_character("Sagoram/Blank")
         else:
-            ask_character("NonAccounter")
-    elif ask_yes("Is your character part of MoonGuyyy's server?"):
-        if ask_yes("Does your character code?"):
-            ask_character("Restitutor")
-        else:
-            ask_character("Robadog")
-    if ask_yes("Does your character speak French?"): ask_character("Sagoram/Blank")
-    else:
-        ask_character("Bareth")
+            ask_character("Bareth")
 if __name__ == "__main__":
     main()
