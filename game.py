@@ -28,28 +28,46 @@ def main() -> None:
     if ask_yes("Is your character youtuber"):
         if ask_yes("Does your character has more than 100 subscriber"):
             if ask_yes("Is your character part of CyHub?"):
-                if ask_yes("Does your character play chess?"): ask_character("Syntax")
-                else: ask_character("Allen")
+                if ask_yes("Does your character play chess?"):
+                    ask_character("Syntax")
+                else:
+                    ask_character("Allen")
             elif ask_yes("Does your character make fotd's?"):
-                if ask_yes("Did you character reach 2 years of fotds"): ask_character("Minecraftr")
-                else: ask_character("Moon")
-            elif ask_character("Did your character made an entire website"): ask_character("Naviary")
-            elif ask_character("Is your character Swedish"): ask_character("EitiFrie")
-            else: ask_character("Zell")
-        elif ask_yes("Does your character play chess?"): ask_character("ChessGuyyy")
-        elif ask_yes("Is your character Swedish?"): ask_character("Jonathan")
-        elif ask_yes("Is your character Turkish?"): ask_character("Mehball")
-        elif ask_yes("Is your character Hungarian?"): ask_character("Who am I")
-        else: ask_character("bareth")
+                if ask_yes("Did you character reach 2 years of fotds"):
+                    ask_character("Minecraftr")
+                else:
+                    ask_character("Moon")
+            elif ask_character("Did your character made an entire website"):
+                ask_character("Naviary")
+            elif ask_character("Is your character Swedish"):
+                ask_character("EitiFrie")
+            else:
+                ask_character("Zell")
+        elif ask_yes("Does your character play chess?"):
+            ask_character("ChessGuyyy")
+        elif ask_yes("Is your character Swedish?"):
+            ask_character("Jonathan")
+        elif ask_yes("Is your character Turkish?"):
+            ask_character("Mehball")
+        elif ask_yes("Is your character Hungarian?"):
+            ask_character("Who am I")
+        else:
+            ask_character("bareth")
     elif ask_yes("Is your character part of CyHub?):
-        if ask_yes("Is your character Turkish?"): ask_character("AncasTier")
+        if ask_yes("Is your character Turkish?"):
+            ask_character("AncasTier")
     elif ask_yes("Is your character part of Tiger's Park (Jonathan's server)?"):
-        if ask_yes("Is your character mod in that server?"): ask_character("GameNerd")
-        else: ask_character("NonAccounter")
+        if ask_yes("Is your character mod in that server?"):
+            ask_character("GameNerd")
+        else:
+            ask_character("NonAccounter")
     elif ask_yes("Is your character part of MoonGuyyy's server?"):
-        if ask_yes("Does your character code?"): ask_character("Restitutor")
-        else: ask_character("Robadog")
+        if ask_yes("Does your character code?"):
+            ask_character("Restitutor")
+        else:
+            ask_character("Robadog")
     if ask_yes("Does your character speak French?"): ask_character("Sagoram/Blank")
-    else: ask_character("Bareth")
+    else:
+        ask_character("Bareth")
 if __name__ == "__main__":
     main()
