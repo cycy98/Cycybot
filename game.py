@@ -25,13 +25,7 @@ def main() -> None:
     print("Please answer the following questions with 'yes' or 'no'\n")
 
     # Questions
-    if ask_yes("Is your character a male?"):
-        if ask_yes("Do they like math?"):
-            ask_character("Cycy")
-        else:
-            ask_character("Bareth")
-    else:
-        ask_character("SOMEONE")
+    print("test")
 
 
 if __name__ == "__main__":
