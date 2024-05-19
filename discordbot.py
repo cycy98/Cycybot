@@ -8,7 +8,7 @@ from typing import AsyncGenerator
 import logging
 
 bot = discord.Bot(
-    intents=discord.Intents.none()
+    intents=discord.Intents.all()
     | discord.Intents.message_content
     | discord.Intents.guild_messages
 )
