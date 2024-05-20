@@ -65,12 +65,9 @@ def main() -> None:
             ask_character("Restitutor")
         else:
             ask_character("Robadog")
-    elif ask_yes("Does your character speak French?"): 
-        if ask_yes("Is your character Turkish?"):
-            ask_character("AncasTier")
-        else:
-            ask_character("Sagoram/Blank")
+    elif ask_yes("Is your character Turkish?"):
+        ask_character("AncasTier")
     else:
-        ask_character("bareth")
+        ask_character("Sagoram/Blank")
 if __name__ == "__main__":
     main()
