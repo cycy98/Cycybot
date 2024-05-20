@@ -71,6 +71,6 @@ def main() -> None:
         else:
             ask_character("Sagoram/Blank")
     else:
-        ask_character("Bareth")
+        ask_character("bareth")
 if __name__ == "__main__":
     main()
