@@ -20,9 +20,9 @@ def ask_character(name: str) -> None:
 
 def main() -> None:
     # Friend Guesser
-    print("Welcome, I'm AkinatorGuyyy!")
+    print("Welcome, I'm AkinatorGuyyy! \U0001F9DE")
     print("Today I will manage to guess your friend! (As long as cycy added them!)")
-    print("Please answer the following questions with 'yes' or 'no'\n")
+    print("Please answer the following questions with 'yes' or 'no'")
 
     # Questions
     if ask_yes("Is your character a youtuber?"):
@@ -33,24 +33,26 @@ def main() -> None:
                 else:
                     ask_character("Allen")
             elif ask_yes("Does your character make fotd's?"):
-                if ask_yes("Did you character reach 2 years of fotds"):
+                if ask_yes("Did you character reach 2 years of fotds?"):
                     ask_character("Minecraftr")
                 else:
                     ask_character("Moon")
-            elif ask_character("Did your character made an entire website"):
+            elif ask_yes("Did your character made an entire website?"):
                 ask_character("Naviary")
             elif ask_character("Is your character Swedish"):
                 ask_character("EitiFrie")
             else:
                 ask_character("Zell")
-        elif ask_yes("Does your character play chess?"):
-            ask_character("ChessGuyyy")
-        elif ask_yes("Is your character Swedish?"):
-            ask_character("Jonathan")
-        elif ask_yes("Is your character Turkish?"):
-            ask_character("Mehball")
-        elif ask_yes("Is your character Hungarian?"):
-            ask_character("Who am I")
+        if ask_yes("Is you character European?"):
+            if ask_yes("Does your character play chess?"):
+                if ask_yes("Is your character Hungarian?"):
+                    ask_character("Who am I")
+                else: 
+                    ask_character("ChessGuyyy")
+            elif ask_yes("Is your character Swedish?"):
+                ask_character("Jonathan")
+            elif ask_yes("Is your character Turkish?"):
+                ask_character("Mehball")
         else:
             ask_character("bareth")
     elif ask_yes("Is your character part of Tiger's Park (Jonathan's server)?"):
@@ -64,9 +66,10 @@ def main() -> None:
         else:
             ask_character("Robadog")
     elif ask_yes("Does your character speak French?"): 
-        ask_character("Sagoram/Blank")
-    elif ask_yes("Is your character Turkish?"):
-         ask_character("AncasTier")
+        if ask_yes("Is your character Turkish?"):
+            ask_character("AncasTier")
+        else:
+            ask_character("Sagoram/Blank")
     else:
         ask_character("Bareth")
 if __name__ == "__main__":
