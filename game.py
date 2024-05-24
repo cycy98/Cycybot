@@ -43,7 +43,7 @@ def main() -> None:
                 ask_character("EitiFrie")
             else:
                 ask_character("Zell")
-        if ask_yes("Is you character European?"):
+        elif ask_yes("Is you character European?"):
             if ask_yes("Does your character play chess?"):
                 if ask_yes("Is your character Hungarian?"):
                     ask_character("Who am I")
