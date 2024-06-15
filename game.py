@@ -29,7 +29,7 @@ def main() -> None:
         if ask_yes("Does your character has more than 100 subscribers?"):
             if ask_yes("Is your character part of CyHub?"):
                 if ask_yes("Does your character play chess?"):
-                    if ask_yes("Does your character has way too many alts"):
+                    if ask_yes("Does your character has way too many alts?"):
                         ask_character("Robadog")
                     else:
                         ask_character("Syntax")
