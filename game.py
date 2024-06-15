@@ -60,7 +60,7 @@ def main() -> None:
             ask_character("bareth")
     elif ask_yes("Is your character part of Tiger's Park (Jonathan's server)?"):
         if ask_yes("Is your character mod in that server?"):
-            ask_character("GameNerd")
+            ask_character("Game_Nerd")
         else:
             ask_character("NonAccounter")
     elif ask_yes("Is your character part of MoonGuyyy's server?"):
