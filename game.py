@@ -29,7 +29,10 @@ def main() -> None:
         if ask_yes("Does your character has more than 100 subscribers?"):
             if ask_yes("Is your character part of CyHub?"):
                 if ask_yes("Does your character play chess?"):
-                    ask_character("Syntax")
+                    if ask_yes("Does your character has way too many alts"):
+                        ask_character("Robadog")
+                    else:
+                        ask_character("Syntax")
                 else:
                     ask_character("Allen")
             elif ask_yes("Does your character make fotd's?"):
@@ -61,10 +64,7 @@ def main() -> None:
         else:
             ask_character("NonAccounter")
     elif ask_yes("Is your character part of MoonGuyyy's server?"):
-        if ask_yes("Does your character code?"):
-            ask_character("Restitutor")
-        else:
-            ask_character("Robadog")
+        ask_character("Restitutor")
     elif ask_yes("Is your character Turkish?"):
         ask_character("AncasTier")
     else:
